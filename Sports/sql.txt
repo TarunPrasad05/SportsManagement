@@ -1,0 +1,5 @@
+create database league;
+use league;
+create table team(t_id integer NOT NULL , password varchar(20) NOT NULL, t_name varchar(10), m_played integer, m_won integer);
+create table player(p_id integer NOT NULL , p_name varchar(20) NOT NULL, t_id integer NOT NULL, g_played integer , g_won integer);
+create table fixture(g_no integer NOT NULL , t1_id integer, t2_id integer , win_id integer);
